@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="641.0" style="-fx-background-color: #e09a0e;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionetudiant.InscriptionController">
+   <children>
+      <Label layoutX="120.0" layoutY="112.0" prefHeight="43.0" prefWidth="95.0" text="NOM" textAlignment="CENTER">
+         <font>
+            <Font name="Broadway" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#110b00" />
+                  <Stop color="#0f0a00" offset="0.9104159260575897" />
+                  <Stop color="#fffaf3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="handleLoadInscrire" layoutX="401.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleLoadInscrire" prefHeight="34.0" prefWidth="83.0" text="ADD">
+         <font>
+            <Font name="Bodoni MT Black" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="120.0" layoutY="172.0" prefHeight="43.0" prefWidth="110.0" text="PRENOM" textAlignment="CENTER">
+         <font>
+            <Font name="Broadway" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#110b00" />
+                  <Stop color="#0f0a00" offset="0.9104159260575897" />
+                  <Stop color="#fffaf3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="116.0" layoutY="226.0" prefHeight="43.0" prefWidth="119.0" text="TUTEUR" textAlignment="CENTER">
+         <font>
+            <Font name="Broadway" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#110b00" />
+                  <Stop color="#0f0a00" offset="0.9104159260575897" />
+                  <Stop color="#fffaf3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="116.0" layoutY="284.0" prefHeight="43.0" prefWidth="110.0" text="CLASSE" textAlignment="CENTER">
+         <font>
+            <Font name="Broadway" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#110b00" />
+                  <Stop color="#0f0a00" offset="0.9104159260575897" />
+                  <Stop color="#fffaf3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="190.0" layoutY="364.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" text="Annuler">
+         <font>
+            <Font name="Bodoni MT Black" size="17.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbClasse" layoutX="285.0" layoutY="280.0" prefHeight="34.0" prefWidth="175.0" promptText="L3-IAGE" style="-fx-background-color: white;" />
+      <Text layoutX="156.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSCRIPTION">
+         <font>
+            <Font name="Cooper Black" size="46.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#110900" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="txtNom" layoutX="285.0" layoutY="117.0" prefHeight="34.0" prefWidth="175.0" />
+      <TextField fx:id="txtPrenom" layoutX="286.0" layoutY="172.0" prefHeight="34.0" prefWidth="175.0" />
+      <TextField fx:id="txtTuteur" layoutX="286.0" layoutY="226.0" prefHeight="34.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
